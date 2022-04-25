@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Clustal Omega :)</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="pngegg.png">
+</head>
+
+<body>
+    <div id="nav_div">
+        <ul id="nav_ul">
+            <li id = "nav-li" style="background-color: black;"><a href="" ><img style="max-height: 14px;" src="kindpng_1217241.png" alt="home"> EMBL-EBI</a></li>
+            <li id = "nav-li" style="background-color: black;"><a href="" >Services</a></li>
+            <li id = "nav-li"><a href="" >Research </a></li>
+            <li id = "nav-li"><a href="" >Training</a></li>
+            <li id = "nav-li"><a href="" >Industry</a></li>
+            <li id = "nav-li"><a href="" >About us</a></li>
+            <button id="dropdown_button"><a href="dropdown"></a></button>
+        </ul>
+
+    </div> 
+    
+    <div id ="header_div">
+        <h1 id = "h1_header_div">Clustal Omega</h1>
+    </div>
+
+    <div id="header_nav">
+        <ul id="header_nav_ul">
+            <li id = "header_li" style="background-color: white;" ><a style = "color: black;" href="" >Input Form</a></li>
+            <li id = "header_li"><a href="" >Web Services</a></li>
+            <li id = "header_li"><a href="" >Help & Documentation </a></li>
+            <li id = "header_li"><a href="" >Bioinformatics Tools FAQ</a></li>
+            <button id="feedback_button"></button>
+        </ul>
+    </div>
+
+    <div id="content">
+        <br><p>Tools > Multiple Sequence Alignment > Clustal Omega</p><br>
+
+        <h1 id="content_header"> Multiple Sequence Alignment</h1><br>
+
+        <p id="paragrpah_spacing">Clustal Omega is a new multiple sequence alignment program that uses seeded guide trees and 
+            HMM profile-profile techniques to generate alignments between three or more sequences. For 
+            the alignment of two sequences please instead use our <a id="dotted_link" href="link">pairwise sequence alignment tools</a>
+        </p><br>
+
+        <p><b>Important note: </b>This tool can align up to 4000 seqeunces or a maximum file size of 4 MB </p><br>
+    </div>
+
+    <div id="form1">
+        <form action="">
+            <fieldset>
+                <legend>STEP 1 - Enter your input sequences </legend><br>
+                <p style="display: inline;">
+                Enter or paste a set of<br>
+                <select name="type" id="sequence_type">
+                    <option value="protein">PROTEIN</option>
+                    <option value="dna">DNA</option>
+                    <option value="rna">RNA</option>
+                </select><br><br>
+
+                sequences in any supported format: <br>
+                <input type="text" id = "text_box"><br><br>
+
+                Or, upload a file:
+                <button>Choose File</button>
+                <span style="float: right;">Use a <a id="dotted_link" href="">example sequence</a> | <a id="dotted_link" href="">Clear sequence</a> |
+                     <a id="dotted_link" href="">See more example inputs</a></span>
+
+                
+                </p>
+                
+                
+            </fieldset>
+        </form>
+    </div><br><br>
+
+    <div id="form2">
+        <form action="">
+            <fieldset>
+                <legend>STEP 2 - Set your parameters </legend><br>
+                <p>
+                OUTPUT FORMAT<br>
+                <select name="output" id="output">
+                    <option value="ClustalW_with_c">ClustalW with character counts</option>
+                    <option value="ClustalW">ClustalW</option>
+                    <option value="pnf">Pearson or FASTA</option>
+                    <option value="msf">MSF</option>
+                    <option value="nexus">NEXUS</option>
+                    <option value="phylip">PHYLIP</option>
+                    <option value="selex">SELEX</option>
+                    <option value="stockholm">STOCKHOLM</option>
+                    <option value="vienna">VIENNA</option>
+                </select><br><br>     
+                </p>
+                <i>The default settings will fulfill the needs of most users.</i><br><br>
+                <button id="option_button">More Options...</button>
+                <i>(Click here, if you want to view or change the default settings.)</i>
+            </fieldset>
+        </form>
+    </div><br><br>
+
+    <div id="form3">
+        <form action="">
+            <fieldset>
+                <legend>STEP 3 - Submit your job </legend><br>
+                <i>The default settings will fulfill the needs of most users.</i><br><br>
+                <input type="checkbox"> Be notified by email 
+                <i>(Tick this box if you want to be notified by email when the results are available)</i><br><br>
+                <button id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div><br><br>
+
+    <div id="comments">
+        <p>
+            If you use this service, please consider citing the following publication: <b><a id="dotted_link" href="">The EMBL-EBI search and sequence analysis tools APIs in 2019</a></b><br><br>
+
+            Please read the provided Help & Documentation and FAQs before seeking help from our support staff. 
+            If you have any feedback or encountered any issues please let us know via <a id="dotted_link" href=""> EMBL-EBI Support</a>. If you plan to use these services during a course please 
+            <a id="dotted_link" href="">contact us</a>. Read our <a id="dotted_link" href="">Privacy Notice </a>if you are concerned with your privacy and how we handle personal information.</p>
+    </div><br><br>
+
+    <div id="footer">
+        <div id="footer1">
+            <img src="EMBL_EBI-logo.png" alt="">
+        </div>
+
+        <div id="footer2">
+            <h3 style="color:#1a67a7;">Services</h3><br>
+            <p>
+                <a href="">By topic </a><br>
+                <a href="">By name (A-Z) </a><br>
+                <a href="">Help & Support </a><br>
+                <a href="">Licensing </a><br>
+            </p>
+        </div>
+
+        <div id="footer3">
+            <h3 style="color:#1aa76c;">Research</h3><br>
+            <p>
+                <a href="">Publications </a><br>
+                <a href="">Research groups </a><br>
+                <a href="">Postdocs & PhDs </a><br>
+            </p>
+
+        </div>
+        
+        <div id="footer4">
+            <h3 style="color:#a5a71a;">Training</h3><br>
+            <p>
+                <a href="">Live training</a><br>
+                <a href="">On-demand training</a><br>
+                <a href="">Support for trainers</a><br>
+                <a href="">Contact organisers</a><br>
+            </p>
+        </div>
+
+        <div id="footer5">
+            <h3 style="color:#5c1aa7;">Industry</h3><br>
+            <p>
+                <a href="">Members Area</a><br>
+                <a href="">Contact Industry team</a><br>
+            </p>
+        </div>
+
+        <div id="footer6">
+            <h3 style="color:#1a67a7;">About EMBL-EBI</h3><br>
+            <p>
+                <a href="">Contact us</a><br>
+                <a href="">Events</a><br>
+                <a href="">Jobs</a><br>
+                <a href="">News</a><br>
+                <a href="">People & groups</a><br>
+             </p>
+             <br>    
+        </div>
+
+        <div> 
+            <p style="color: rgb(150, 148, 148);">EMBL-EBI, Wellcome Genome Campus, Hinxton, Cambridgeshire, CB10 1SD, UK. +44 (0)1223 49 44 44</p><br>
+            <p>Copyright © EMBL 2022 | EMBL-EBI is <a id="dotted_link" href="">part of the European Molecular Biology Laboratory </a> | <a id="dotted_link" href="">Terms of use</a>                
+                <a style="float: right;" id="dotted_link" href="">  intranet <b>></b></a>
+            </p>
+            <br>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
